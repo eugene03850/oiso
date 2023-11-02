@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 80px; /* 네비게이션 바의 높이만큼 공간 확보 */
+}
+header {
+    background-color: #f2f2f2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+.profile-section {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-nickname {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: left;
+}
+.star-rating {
+    font-size: 15px;
+    text-align: right;
+
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #004F25;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+}
+
+nav img{
+    filter:invert(100%);
+}
+.review-section {
+    padding: 0 30px;
+    
+}
+.review-header {
+    display: flex;
+    justify-content: space-between;
+}
+.review-header-block {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.review-header-block.active {
+    background-color: #f2f2f2;
+}
+.image-grid {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top:10px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 20px
+}
+.review-image {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review-content {
+    background-color: #f2f2f2;
+    padding: 10px;
+    
+}
+.review {
+    margin-bottom: 10px;
+    border-top: 1px solid #dcdcdc;
+    padding: 10px 10px;
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.review-text {
+    margin-left: 20px;
+}
+.review-user {
+    font-weight: bold;
+}
+.review-product {
+    color: #808080;
+}
+.review-description {
+    margin-top: 10px;
+}
+.star-rating-individual {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color:#004F25;
+}

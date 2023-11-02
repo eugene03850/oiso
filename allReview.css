@@ -1,0 +1,77 @@
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 80px; /* 네비게이션 바의 높이만큼 공간 확보 */
+        }
+        header {
+            background-color: #ffffff;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo {
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #004F25;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            flex: 1;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        nav img{
+            filter:invert(100%);
+        }
+
+
+        .review-section {
+            padding: 50px 30px;
+            
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .image-grid {
+            background-color: #ffffff;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 10px;
+            padding-left: 10px;
+            padding-right: 20px
+        }
+        .review-image {
+            padding: 0 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .page{
+            display: flex; 
+            justify-content: center; 
+            
+        }
+
+        .page a{
+            text-decoration: none;
+            color:black;
+        }
+
+        
